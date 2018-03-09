@@ -6,6 +6,7 @@ Sample project to reproduce KARAF-5664
  * activator/ project contains a service registration via Activator (works as expected)
  * service/ project contains a service registration via Service Component (KARAF-5664 bug presents itself)
  
+ service:list
  
     karaf@root()> ls io.hyte.api.Service
  
@@ -27,7 +28,8 @@ Sample project to reproduce KARAF-5664
     Provided by :                                                                                                                                                                                                                                                                                                                                                                           
        HYTE :: Service (138)   
  
- 
+ scr:info
+   
     karaf@root()> scr:info io.hyte.service.ComponentService
     *** Bundle: io.hyte.karaf.service (138)
     Component Description:
