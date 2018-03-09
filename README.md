@@ -64,7 +64,7 @@ Sample project to reproduce KARAF-5664
         component.id = 6
         component.name = io.hyte.service.ComponentService
  
-  scr:info io.hyte.service.ComponentService
+  scr:info io.hyte.service.AnnotationService
  
     karaf@root()> scr:info AnnotationService
     *** Bundle: io.hyte.karaf.annotation (139)
