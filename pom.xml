@@ -15,8 +15,9 @@
 	</organization>
 	<modules>
 		<module>api</module>
-		<module>service</module>
 		<module>activator</module>
+		<module>annotation</module>
+		<module>service</module>
 	</modules>
 	<build>
 		<plugins>
