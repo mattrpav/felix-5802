@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.hyte.karaf</groupId>
+	<artifactId>karaf-5664</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>HYTE :: Karaf :: KARAF-5664</name>
+	<url>http://hyte.io</url>
+	<inceptionYear>2017</inceptionYear>
+	<organization>
+		<name>HYTE Technologies, Inc.</name>
+		<url>http://hyte.io</url>
+	</organization>
+	<modules>
+		<module>api</module>
+		<module>service</module>
+		<module>activator</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>3.5.0</version>
+				<inherited>true</inherited>
+				<extensions>true</extensions>
+				<configuration>
+					<versions>
+						<hyte.osgi.version>${project.version}</hyte.osgi.version>
+					</versions>
+					<instructions>
+						<Bundle-Activator>${activator}</Bundle-Activator>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-DocURL>${project.url}</Bundle-DocURL>
+						<Bundle-License>Apache License 2.0</Bundle-License>
+						<Export-Package>${export}</Export-Package>
+						<Import-Package>${import}</Import-Package>
+						<Implementation-Title>${project.description}</Implementation-Title>
+						<Implementation-Version>${project.version}</Implementation-Version>
+						<Service-Component>${service.component}</Service-Component>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

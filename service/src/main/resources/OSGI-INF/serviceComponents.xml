@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="io.hyte.service.ComponentService" immediate="true">
+	<service scope="singleton">
+		<provide interface="io.hyte.api.Service" />
+	</service>
+	<implementation class="io.hyte.service.ComponentService" />
+</scr:component>
