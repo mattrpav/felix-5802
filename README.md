@@ -1,11 +1,11 @@
-# KARAF-5664
+# FELIX-5802
 
-Sample project to reproduce KARAF-5664 
+Sample project to reproduce FELIX-5802 (formerly KARAF-5664)
 
  * api/ project contains interface class
  * activator/ project contains a service registration via Activator (works as expected)
- * annotation/ project contains a service registration via OSGI DS Annotation (KARAF-5664 bug presents itself)
- * service/ project contains a service registration via Service Component (KARAF-5664 bug presents itself)
+ * annotation/ project contains a service registration via OSGI DS Annotation (FELIX-5802 bug presents itself)
+ * service/ project contains a service registration via Service Component (FELIX-5802 bug presents itself)
  
  service:list
  
@@ -89,5 +89,5 @@ Sample project to reproduce KARAF-5664
         component.id = 7
         component.name = AnnotationService
  
- ref: https://issues.apache.org/jira/browse/KARAF-5664
+ ref: https://issues.apache.org/jira/browse/FELIX-5802
  
