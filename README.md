@@ -1,6 +1,6 @@
 # FELIX-5802
 
-Sample project to reproduce FELIX-5802 (formerly KARAF-5664)
+Sample project to reproduce [FELIX-5802](https://issues.apache.org/jira/browse/FELIX-5802) (formerly KARAF-5664)
 
  * api/ project contains interface class
  * activator/ project contains a service registration via Activator (works as expected)
