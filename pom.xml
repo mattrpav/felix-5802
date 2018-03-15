@@ -18,6 +18,8 @@
 		<module>activator</module>
 		<module>annotation</module>
 		<module>service</module>
+		<module>client1</module>
+		<module>client2</module>
 	</modules>
 	<build>
 		<plugins>
